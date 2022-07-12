@@ -1,0 +1,26 @@
+# General Python setup tools
+wheel
+setuptools
+black
+#autopep8
+#pycodestyle
+
+
+# CICD tools
+pre-commit
+GitPython # Local Github .git folder interactions
+jira # Jira API interactions
+PyGithub  # Github API interactions
+
+# Testing tools
+jsonpath_ng
+pytest
+mock
+
+# CDK v2
+aws-cdk-lib>=2.0.0
+constructs>=10.0.0
+boto3
+
+# General inputs
+aws-lambda-powertools

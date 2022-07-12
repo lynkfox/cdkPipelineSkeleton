@@ -1,0 +1,3 @@
+jira # Jira API interactions
+PyGithub  # Github API interactions
+aws_lambda_powertools

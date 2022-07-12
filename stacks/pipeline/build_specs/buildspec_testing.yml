@@ -1,0 +1,23 @@
+version: 0.2
+
+env:
+  shell: bash
+  secrets-manager:
+    SECRETS: $SECRET_LOCATION
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+    commands:
+      - pip3 install --upgrade pip
+      - pip3 install -r requirements.txt --force >/dev/null
+
+  pre_build:
+    commands:
+      - echo "***** Running Tests *****"
+      - source $SCRIPT
+  build:
+    commands:
+  post_build:
+    commands:
